@@ -2,6 +2,8 @@
 iatest=$(expr index "$-" i)
 
 
+### Command to switch keyboard layout gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Alt>Shift_L','<Shift>Alt_L']"
+
 ##################### MY ALIASES ##############################
 alias pip="pip3"
 alias py="python3"

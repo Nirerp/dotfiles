@@ -2,8 +2,6 @@
 iatest=$(expr index "$-" i)
 
 
-### Command to switch keyboard layout gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Alt>Shift_L','<Shift>Alt_L']"
-
 ##################### MY ALIASES ##############################
 alias pip="pip3"
 alias py="python3"
@@ -697,3 +695,7 @@ export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bi
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 . "$HOME/.cargo/env"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

@@ -1,0 +1,91 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 20,
+    "spacing": 25,
+    "modules-left": ["custom/arch", "custom/code", "custom/edge", "custom/terminal"],
+    "modules-right": ["hyprland/language", "network", "bluetooth", "temperature", "memory", "cpu", "battery", "custom/power"],
+
+    "custom/arch": {
+        "format": "󰣇",
+        "on-click": "wofi --show drun",
+        "tooltip": false,		
+    },
+
+    "custom/code": {
+        "format": "󰨞",
+        "on-click": "code",
+        "tooltip": false
+    },
+
+    "custom/edge": {
+        "format": "󰇩",
+        "on-click": "microsoft-edge-stable",
+        "tooltip": false
+    },
+
+    "custom/terminal": {
+        "format": "",
+        "on-click": "kitty",
+        "tooltip": false
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "bash ~/.config/waybar/scripts/power-menu.sh",
+        "tooltip": false,
+        "border": true
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip": true,
+        "border": true
+    },
+
+    "cpu": {
+        "format": "  {usage}%",
+        "tooltip": true,
+        "border": true
+    },
+
+    "memory": {
+        "format": "  {used}%",
+        "tooltip": true,
+        "border": true
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["󰔏"],
+        "border": true
+    },
+
+    "bluetooth": {
+        "format": "  ",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂯",
+        "on-click": "blueman-manager",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "border": true
+    },
+
+    "network": {
+        "format-wifi": "󰖩 {essid}",
+        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+        "format-disconnected": "󰖪",
+        "on-click": "nm-connection-editor",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "border": true
+    },
+
+		"hyprland/language": {
+				"format": "   {}",
+				"format-il": "HE",
+				"format-en": "ENG",
+                "border": true
+},
+
+}

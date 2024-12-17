@@ -1,0 +1,79 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(30, 30, 46, 0.6);
+  color: #cdd6f4;
+}
+
+#custom-arch,
+#custom-code,
+#custom-edge,
+#custom-terminal,
+#custom-power,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#bluetooth,
+#network,
+#hyprland-language,
+button:hover {
+  color: #cdd6f4;
+}
+
+#custom-arch {
+  font-size: 30px;
+  margin-left: 10px;
+  color: rgba(0, 251, 255, 0.775);
+}
+
+#custom-code {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 8px;
+  color: rgba(182, 130, 255, 0.77);
+}
+
+#custom-edge {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 8px;
+  color: rgba(0, 255, 17, 0.585);
+}
+
+#custom-terminal {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+#custom-power {
+  color: #f38ba8;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#bluetooth {
+  color: #0080ff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#battery.charging {
+  color: #a6e3a1;
+  margin-right: 10px;
+}
+
+#battery.warning:not(.charging) {
+  color: #f38ba8;
+  margin-right: 10px;
+}
+
+#hyprland-language {
+  color: #cdd6f4;
+  margin-right: 10px;
+}

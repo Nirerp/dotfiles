@@ -1,0 +1,199 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Fira Code Nerd Font";
+  font-size: 15px;
+  min-height: 0;
+}
+
+@keyframes blink-update {
+  to {
+    background-color: #c53b53;
+  }
+}
+
+#custom-pacman {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #c3e88d;
+}
+
+#custom-pacman.pending-updates {
+  animation-name: blink-update;
+  animation-duration: 3s;
+}
+
+#custom-archicon {
+
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 0px;
+  padding-right: 2px;
+  color: #ffc777;
+  font-size: x-large;
+}
+
+window#waybar {
+  background: transparent;
+  /*color: #7AA2F7;*/
+  /*color: #EA7695;*/
+  color: #C099FF;
+}
+
+#window {
+  color: #B4F9F8;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#workspaces {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  color: #ff757f;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background: transparent;
+  color: #ff757f;
+  border-top: 2px solid transparent;
+}
+
+#workspaces button.focused {
+  color: #ff757f;
+  border-top: 2px solid #c9545d;
+}
+
+#mode {
+  background: #64727D;
+  border-bottom: 3px solid white;
+  padding: 0 3px;
+  margin: 0 2px;
+}
+
+#pulseaudio {
+
+  color: #ff9e64;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 21px;
+}
+
+#network {
+
+  color: #41a6b5;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 2px;
+}
+
+#cpu {
+
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 13px;
+  color: #c0caf5;
+}
+
+#memory {
+
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 13px;
+  color: #7dcfff;
+}
+
+#tray {
+
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 21px;
+}
+
+#clock {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  margin-right: 5px;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 13px;
+}
+
+#network.disconnected {
+  background: #f53c3c;
+}
+
+#hyprland-language {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 13px;
+  color: #cdd6f4;
+}

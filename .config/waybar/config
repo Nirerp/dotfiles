@@ -1,0 +1,104 @@
+{
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar at the bottom of your screen
+  "height": 24, // Waybar height
+  // "width": 1366, // Waybar width
+  // Choose the order of the modules
+  "modules-left": [
+    "custom/archicon",
+    "hyprland/workspaces",
+    "hyprland/submap",
+    "hyprland/window"
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "hyprland/language",
+    "pulseaudio",
+    "network",
+    "custom/pacman",
+    "cpu",
+    "memory",
+    "tray",
+    "clock"
+  ],
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10
+  },
+  "clock": {
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "cpu": {
+    "format": "{usage}% ",
+    "on-click": "kitty htop"
+  },
+  "memory": {
+    "format": " 󰍛 {}%  ",
+    "on-click": "kitty yazi"
+  },
+  "battery": {
+    "bat": "BAT0",
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "network": {
+    // "interface": "wlp2s0", // (Optional) To force the use of this interface
+    "format-wifi": "{essid}   ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr}    ",
+    "format-disconnected": "Disconnected ⚠"
+  },
+  "pulseaudio": {
+    //"scroll-step": 1,
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "custom/archicon": {
+    "format": " 󰣇 ",
+    "tooltip": false
+  },
+  "custom/pacman": {
+    "format": "{}{icon}",
+    "return-type": "json",
+    "format-icons": {
+      "pending-updates": "  ",
+      "updated": ""
+    },
+    "exec-if": "which waybar-updates",
+    "exec": "waybar-updates",
+    "on-click": "kitty yay"
+  },
+  
+  "hyprland/language": {
+    "format": "  {}",
+    "format-il": "He",
+    "format-en": "En",
+    "border": true
+},
+}

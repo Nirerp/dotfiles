@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 iatest=$(expr index "$-" i)
 
+## Using Gnome swithch languages with ALT+SHIFT:
+# gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Shift>Alt_L']"
+# gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Alt>Shift_L']"
+########
 
 ##################### MY ALIASES ##############################
 alias pip="pip3"

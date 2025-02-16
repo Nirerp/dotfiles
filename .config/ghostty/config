@@ -1,6 +1,3 @@
-# This is the configuration file for Ghostty.
-#
-# This template file has been automatically created at the following
 # path since Ghostty couldn't find any existing config files on your system:
 #
 #   /home/nir/.config/ghostty/config
@@ -57,3 +54,14 @@ background-opacity = 0.9
 gtk-titlebar = true
 # custom-shader = /home/chris/bloom.glsl
 #custom-shader = /home/chris/crt.glsl
+
+
+## Keybindings ##
+keybind = ctrl+shift+enter=new_split:right
+keybind = ctrl+shift+t=new_split:down
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:down
+keybind = ctrl+k=goto_split:up
+keybind = ctrl+l=goto_split:right
+
+#### End of Keybindings ###

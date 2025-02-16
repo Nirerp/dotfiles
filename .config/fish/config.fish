@@ -1,5 +1,8 @@
 #!/usr/bin/env fish
 
+# Suppress the welcome message
+set -g fish_greeting ""
+
 # Environment Variables
 set -gx EDITOR nvim
 set -gx VISUAL nvim

@@ -392,8 +392,15 @@ function fish_user_key_bindings
     bind \cf 'zi'
 end
 
+# Detect Linux distribution
+if test -f /etc/os-release
+    set distro (awk -F= '$1 == "ID" {print $2}' /etc/os-release)
+else
+    set distro (uname -s)  # Fallback
+end
+
 # Set bat alias based on distribution
-if contains (distribution) redhat arch
+if contains $distro arch redhat
     alias cat='bat'
 else
     alias cat='batcat'

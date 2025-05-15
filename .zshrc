@@ -205,11 +205,11 @@ alias bd='cd "$OLDPWD"'
 alias rmd='/bin/rm --recursive --force --verbose '
 
 # Using lsd for pretty file listings (from your existing zshrc)
-alias ls='ls -aFh --color=always'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+alias ls='lsd -aFh --color=always'
+alias l='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
+alias lt='lsd --tree'
 
 # Original ls aliases (commented out since you're using lsd)
 # alias la='ls -Alh'                # show hidden files
